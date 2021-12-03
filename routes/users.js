@@ -56,11 +56,11 @@ router.post("/user/login", async (req, res) => {
     if (user === null) {
       res.status(400).json({ message: "Unauthorized" });
     } else {
-      console.log(user.hash, "Hash à comparer");
+      // console.log(user.hash, "Hash à comparer");
       const newHash = SHA256(req.fields.password + user.salt).toString(
         encBase64
       );
-      console.log(newHash);
+      // console.log(newHash);
       if (user.hash === newHash) {
         res.json({
           _id: user._id,

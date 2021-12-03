@@ -1,7 +1,6 @@
 {
   "name": "vinted",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -20,6 +19,17 @@
     "install": "^0.13.0",
     "mongoose": "^6.0.11",
     "npm": "^8.1.0",
+    "stripe": "^8.188.0",
     "uid2": "^1.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorentCoeffic/vinted-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FlorentCoeffic/vinted-api/issues"
+  },
+  "homepage": "https://github.com/FlorentCoeffic/vinted-api#readme",
+  "description": ""
 }
