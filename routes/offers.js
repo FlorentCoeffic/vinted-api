@@ -78,7 +78,7 @@ router.get("/offers", async (req, res) => {
     } else {
       page = Number(req.query.page);
     }
-    let limit = Number(req.query.limit) || 10;
+    let limit = Number(req.query.limit) || 15;
 
     const count = await Offer.countDocuments(filters);
 
